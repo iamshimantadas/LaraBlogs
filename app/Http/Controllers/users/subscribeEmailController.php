@@ -65,16 +65,5 @@ if($res){
 
     }
 
-    // public function check(Request $request){
-    //     $request->validate([ 'email' => 'required']);
-    //     $email = $request['email'];
-
-    //     $num = DB::table('newsletter')->where('email','=',$email)->get()->count();
-    //     if($num == 1){
-    //         return "EMAIL EXIST";
-    //     }
-    //     else{
-    //          return "EMAIL NOT EXIST";
-    //     }
-    // }
+   
 }
