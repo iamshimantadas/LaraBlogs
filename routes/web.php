@@ -180,7 +180,7 @@ Route::get('/resetpass',function(){
 Route::post('/change_pass_req',[userLoginController::class,'resetPassReq'])->name('userpasswordReset');
 
 
-
+//  donation module
 Route::get('/donate',[donationController::class,'getRedirect']);
 Route::post('/accept_pay',[donationController::class,'pay'])->name('pay');
 Route::get('/pay_success',[donationController::class,'return'])->name('paysuccess');
