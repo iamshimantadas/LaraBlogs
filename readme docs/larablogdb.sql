@@ -43,7 +43,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`adminid`, `adminname`, `email`, `passwd`, `sec_string`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'shimanta das(admin)', 'iamshimantadas@gmail.com', 'shi@code', 'maa', 1, NULL, NULL);
+(1, 'shimanta das(admin)', 'demo@gmail.com', 'demo123', 'baba', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
