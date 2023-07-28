@@ -7,24 +7,16 @@ Admin able to see search histories, visitor's contact requests, next article req
 
 Fully responsive app thanks to:
 Admin Panel: https://github.com/xriley/portal-theme-bs5
-
 Frontend Logbook theme fisher: https://themefisher.com/products/logbook
-
 
 Note: for some technical reason Razorpay test/live key has been disabled. But don't worry you can paste your own live key into that and start accepting payments.
 I have also applied google adsence into project which also disabled. But you can un-comment that and put your your script of display ads.
 
 
 
-
-
 ## Authors
 
 - [@shimanta das](https://github.com/iamshimantadas)
-
-
-
-
 
 
 ## Installation
@@ -59,6 +51,11 @@ For linux(debian/ubuntu etc.)
 
 open-source
 
+## Porudction cache clear
+php artisan cache:clear  => helps to clear whole site cache.
+php artisan route:cache  => helps to clear route cache.
+php artisan view:clear  =>  helps to clear cache’s of views.
+php artisan config:cache => helps to clear config(configuration) caches.
 
 
 
