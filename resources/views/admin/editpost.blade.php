@@ -106,7 +106,9 @@
   @enderror -->
   <textarea style="width:100%;resize: vertical;padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;" name="thumbcontent" value="{{$post->thumbcontent}}" rows="10" required></textarea>
+  border-radius: 4px;" name="thumbcontent" value="{{$post->thumbcontent}}" rows="10" required>
+  {{$post->thumbcontent}}
+</textarea>
   <!-- <input name="thumbcontent" class="form-control" type="text"> -->
   @error('thumbcontent')
   <span style='color:red;'>{{$message}}</span>
