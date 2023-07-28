@@ -97,7 +97,14 @@
 <div class="mb-3">
   <label for="thumbcontent" style="color:black;" class="form-label">Enter Thumb Content</label><span style='color:red;font-size:20px;'>&#42;</span>
   <br>
-  <textarea name="thumbcontent" id="thumbcontent" value="{{old('thumbcontent')}}" cols="30" rows="10" required></textarea>
+  <!-- <textarea name="thumbcontent" id="thumbcontent" value="{{old('thumbcontent')}}" cols="30" rows="10" required></textarea>
+  @error('thumbcontent')
+  <span style='color:red;'>{{$message}}</span>
+  @enderror -->
+  <textarea style="width:100%;resize: vertical;padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;" name="thumbcontent"  rows="10" required></textarea>
+  <!-- <input name="thumbcontent" class="form-control" type="text"> -->
   @error('thumbcontent')
   <span style='color:red;'>{{$message}}</span>
   @enderror
@@ -294,9 +301,9 @@
 
 </body>
 
-<script>
+<!-- <script>
 CKEDITOR.replace('thumbcontent');
-</script>
+</script> -->
 <script>
 CKEDITOR.replace('bodycontent1');
 </script>
