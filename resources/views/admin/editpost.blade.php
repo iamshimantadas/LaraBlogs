@@ -100,10 +100,18 @@
   <br>
   <!-- setting hidden input field for textarea -->
   <input type="hidden" id="thumbcontentjQueryVal" value="{{$post->thumbcontent}}">
-  <textarea name="thumbcontent" id="thumbcontent" cols="30" rows="10" required></textarea>
+  <!-- <textarea name="thumbcontent" id="thumbcontent" cols="30" rows="10" required></textarea>
+  @error('thumbcontent')
+  <span style='color:red;'>{{$message}}</span>
+  @enderror -->
+  <textarea style="width:100%;resize: vertical;padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;" name="thumbcontent"  rows="10" required></textarea>
+  <!-- <input name="thumbcontent" class="form-control" type="text"> -->
   @error('thumbcontent')
   <span style='color:red;'>{{$message}}</span>
   @enderror
+
 </div>
 
 <div class="mb-3">
@@ -337,7 +345,7 @@
 
 </body>
 
-<script>
+<!-- <script>
 CKEDITOR.replace('thumbcontent');
 
 var text1;
@@ -345,7 +353,7 @@ $(document).ready(function(){
     text1 = $('#thumbcontentjQueryVal').val();
     CKEDITOR.instances['thumbcontent'].setData(text1);
 });
-</script>
+</script> -->
 <script>
 CKEDITOR.replace('bodycontent1');
 
