@@ -53,8 +53,11 @@ open-source
 
 ## Porudction cache clear
 php artisan cache:clear  => helps to clear whole site cache.
+
 php artisan route:cache  => helps to clear route cache.
+
 php artisan view:clear  =>  helps to clear cache’s of views.
+
 php artisan config:cache => helps to clear config(configuration) caches.
 
 
