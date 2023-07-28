@@ -11,8 +11,8 @@ Admin Panel: https://github.com/xriley/portal-theme-bs5
 Frontend Logbook theme fisher: https://themefisher.com/products/logbook
 
 
-
-
+Note: for some technical reason Razorpay test/live key has been disabled. But don't worry you can paste your own live key into that and start accepting payments.
+I have also applied google adsence into project which also disabled. But you can un-comment that and put your your script of display ads.
 
 
 

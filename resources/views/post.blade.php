@@ -38,11 +38,11 @@
 </head>
 
 <!-- google ads -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-841597366947"
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8447"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-8415566947"
+     data-ad-client="ca-pub-8447"
      data-ad-slot="5754947726"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
@@ -106,11 +106,11 @@
                     <br>
 
                     <!-- google ads -->
-                    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8419566947"
+                    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-84947"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-84159947"
+     data-ad-client="ca-pub-8417"
      data-ad-slot="5754947726"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
@@ -151,12 +151,12 @@
                     <br>
 
                     <!-- google ads -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-841599566947"
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-846947"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-84159739566947"
-     data-ad-slot="5754947726"
+     data-ad-client="ca-pub-8415947"
+     data-ad-slot="575726"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
@@ -197,13 +197,15 @@
                 <?php  $userid = session()->get('userid');  ?>
 
                 <div class="row">
-                  <form action="{{url('/')}}/donate" method="GET">
+                  
+                <!-- donation form -->
+                <!-- <form action="{{url('/')}}/donate" method="GET">
                      @csrf
                      <input type="hidden" name="blogid" id="blogid" value="{{$postid}}" required>
                      <input type="hidden" name="visitorid" id="visitorid" value="{{$userid}}">
                       <button style="margin-left: auto;margin-right: auto;font-size: 20px;" class="btn btn-dark" type="submit">
                       <i class="bi bi-currency-rupee"></i> Donate Me</button>
-                     </form>
+                     </form> -->
                   
                   <button name="whatsAppShareBtn" id="whatsAppShareBtn" style="margin-left: auto;margin-right: auto;font-size: 20px;" class="btn btn-success" onclick="openWhatsApp()"><i class="bi bi-whatsapp"></i> Share to WhatsApp</button>
                   {{ csrf_field() }}

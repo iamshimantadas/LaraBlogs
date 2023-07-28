@@ -99,7 +99,7 @@
                success:function(result){
                    var options = {
                     // apply your own test key/prod key
-                        "key": "rzp_test_6K4iMl",
+                        "key": "rzp_test_L2Lm",
                         // 1 rupee = 100 paise, so 50 rupee = 50*100 
                         "amount": amt*100, 
                         // INR currency indian.

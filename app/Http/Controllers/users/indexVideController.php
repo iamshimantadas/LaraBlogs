@@ -20,7 +20,7 @@ class indexVideController extends Controller
         ->join('admins','admins.adminid','=','posts.post_admin_id')
         ->where('posts.public_visibility','=',1)
         ->orderBy('posts.postid', 'desc')
-        ->paginate(10);
+        ->paginate(2);
 
       $cat = DB::table('categories')->get();
     
