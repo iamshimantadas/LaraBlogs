@@ -84,7 +84,7 @@
                      <img src="img/{{$post->thumbimg}}" class="img-fluid" alt="post-thumb" style='margin-left:auto;margin-right:auto;'>
                      <font style="margin-left: 10px;">Image Credit: {{$post->thumbimgcap}} </font>
                     </div>
-                    <font style='font-size: 30px;margin-left: 20px;margin-right: 10px;' class='text-start'>
+                    <font style='font-size: 15px;margin-left: 20px;margin-right: 10px;' class='text-start'>
                     <?php echo $post->thumbcontent; ?>
                     </font>
                         <!-- end of thumb content -->
