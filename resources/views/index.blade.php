@@ -28,6 +28,7 @@
             <div class="col-lg-8  mb-5 mb-lg-0">
 
 
+            @if(isset($posts))
             @foreach($posts as $post)
                <article class="row mb-5">
                   <div class="col-md-4 mb-4 mb-md-0">
@@ -65,15 +66,18 @@
                   </div>
                </article>
                @endforeach
+               @endif
 
                
 
               <!-- pagination buttons  -->
+              @if(isset($posts))
               <div class="row">
                   <a href="{{$posts->previousPageUrl()}}" style="margin-left: auto;margin-right:auto;"><button class="btn btn-outline-dark">Previous Page</button></a>
                   <button class="btn btn-primary" style="margin-left: auto;margin-right:auto;">{{$posts->currentPage()}}</button>
                   <a href="{{$posts->nextPageUrl()}}" style="margin-left: auto;margin-right:auto;"> <button class="btn btn-outline-dark" >Next Page</button> </a>
                </div>
+               @endif
                <!-- end of pagination -->
 
 
@@ -128,6 +132,7 @@ $(document).ready(function(){
                   <h5 class="widget-title"><span>Categories</span></h5>
                   <ul class="list-unstyled widget-list">
                      
+                  @if(isset($cat))
                   @foreach($cat as $cat)
                      <li>
                         <form action="{{url('/')}}/category_view" method="get">
@@ -138,6 +143,7 @@ $(document).ready(function(){
                         </form>
                      </li>
                     @endforeach
+                    @endif
                      
                   </ul>
                </div>
@@ -148,7 +154,7 @@ $(document).ready(function(){
                      <h4 class="fst-italic">Last Week</h4>
                      <ul class="list-unstyled">
                        
-                         
+                         @if(isset($lastweek))
                         @foreach($lastweek as $lastweek)
                         <li>
                            <font
@@ -173,49 +179,8 @@ $(document).ready(function(){
                            </font>
                         </li>
                         @endforeach
+                        @endif
 
-
-                        <!-- <li>
-                           <font
-                              class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
-                              <img src="images/post/post-6.jpg" class="bd-placeholder-img img-thumbnail" alt=""
-                                 style="max-height: 200px;max-width: 200px;">
-                              <br>
-                              <div class="col-lg-8">
-                                 <h6 class="mb-4">Elements That You Can Use To Create A New Post On This Template.</h6>
-                                 <small class="text-body-secondary"
-                                    style="color: rgb(1, 1, 99);font-size: 13px;float: left;display: inline;">January
-                                    13, 2023</small>
-                                 <small>
-                                    <form action="" method=""> <input type="hidden" name=""> <input type="submit"
-                                          value="Read More"
-                                          style="float: right;border: white;color: blue;font-size: 13px;background-color: white;">
-                                    </form>
-                                 </small>
-                              </div>
-                           </font>
-                        </li> -->
-
-                        <!-- <li>
-                           <font
-                              class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
-                              <img src="images/post/post-6.jpg" class="bd-placeholder-img img-thumbnail" alt=""
-                                 style="max-height: 200px;max-width: 200px;">
-                              <br>
-                              <div class="col-lg-8">
-                                 <h6 class="mb-4">Elements That You Can Use To Create A New Post On This Template.</h6>
-                                 <small class="text-body-secondary"
-                                    style="color: rgb(1, 1, 99);font-size: 13px;float: left;display: inline;">January
-                                    13, 2023</small>
-                                 <small>
-                                    <form action="" method=""> <input type="hidden" name=""> <input type="submit"
-                                          value="Read More"
-                                          style="float: right;border: white;color: blue;font-size: 13px;background-color: white;">
-                                    </form>
-                                 </small>
-                              </div>
-                           </font>
-                        </li> -->
 
                      </ul>
                   </div>

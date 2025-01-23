@@ -17,7 +17,18 @@ I have also applied google adsence into project which also disabled. But you can
 ## Authors
 
 - [@shimanta das](https://github.com/iamshimantadas)
+- Schema Of SQL: https://dbdiagram.io/d/larablogdb-64c22ef802bd1c4a5ec8ceb9
 
+## Local Setup
+
+1. First migrate your's local database
+```
+php artisan migrate
+```
+2. Now generate your key
+``` 
+php artisan key:generate 
+```
 
 ## Installation
 
